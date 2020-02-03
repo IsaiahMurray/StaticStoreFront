@@ -46,18 +46,17 @@ width: 100%;
 
 .Selections{
 display: flex;
-flex-direction: row;
+flex-direction: row; 
 margin: auto;
 text-align: center;
 width: 100%;
-position: static;
-
+position: relative;
 }
 
-/* .Selections > a {
+.Selections > a {
   position: relative;
-  margin: 2%;
-} */
+  text-align: center;
+} 
 
 .Selections-img{
 flex: 25%;
