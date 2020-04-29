@@ -1,89 +1,43 @@
-body{
+#body{
   background-color: #757575;
-}
-
-.navbar {
-  border: snow solid;
-  background-color: saddlebrown;
-  height: 20px;
-}
-
-.top-Links {
-  float: right;
   color: snow;
 }
-
-.top-Links > a {
-  color: snow;
-  margin-left: 10px;
-}
-
-.nav-block {
-  text-align: center;
-  position: relative;
-}
-
-.nav-block > button {
+ 
+#second-container{
   background-color: saddlebrown;
-  border: ridge snow;
-  border-width: 2px;
-  height: 60px;
-} 
+  margin-top: 0;
+}
 
-button > a {
+/* header-nav */
+
+#header-button{
+background-color: #757575 !important;
 color: snow;
-font-style: oblique;
+border: 2px solid snow;
+margin: 4px 2px;
+border-radius: 5px;
 }
 
-#search-bar {
-margin-bottom: 15px;
+#header-button:hover{
+  color: #757575;
+  background-color: snow !important;
+  border: solid 2px #757575;
 }
 
-.header-img {
-height: 75%;
-width: 100%;
+/* header-img */
+
+#head-img{
+  margin-top: 20px;
 }
 
-.Selections{
-display: flex;
-flex-direction: row; 
-margin: auto;
-text-align: center;
-width: 100%;
-position: relative;
+#header-img{
+  max-height: 175px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.Selections > a {
-  position: relative;
-  text-align: center;
-} 
+/* image-carousel */
 
-.Selections-img{
-flex: 25%;
-height: 150px; 
-width: 150px;
-padding-left: 10%;
-padding-right: 10%;
-position: relative;
-border: solid snow;
-padding: 10px;
-}
-
-.article {
-  margin-top: 5px;
-  background-color: saddlebrown;
-  border: snow solid;
-}
-
-footer {
-  background-color: saddlebrown;
-  height: 45px;
-  border: snow solid; 
-}
-
-footer > a {
-  color: snow;
-}
 .fling-minislide {
   width: 600px;
   height: 600px; 
@@ -105,3 +59,56 @@ height: auto;
 .fling-minislide img:nth-child(3){animation-delay:5s;}
 .fling-minislide img:nth-child(2){animation-delay:10s;}
 .fling-minislide img:nth-child(1){animation-delay:15s;}
+
+/* welcome-section */
+
+#welcome{
+  text-align: center;
+}
+
+#welcome-container{
+  margin-top: 20px;
+}
+
+/* flip-boxes */
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: saddlebrown;
+  color: snow;
+  border: solid 2px snow;
+  transform: rotateY(180deg);
+}
